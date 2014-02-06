@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="js/effect.js" ></script>
-    <link href="css/style.css" rel="stylesheet">
-    </head>
+  <script type="text/javascript" src="js/effect.js"></script>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
 <body>
-    <h1>Ambilike</h1>
-    <div id="wall_reflection">
-        <div id="c_container">
-            <canvas id="wall_canvas"></canvas>
-        </div>
-        <div id="v_container">
-            <video id="video" autoplay="autoplay" controls="controls" width="640px" height="360px" >
-                <source src="assets/video.mp4" type="video/mp4" />
-                <source src="assets/video.webm" type="video/webm" />
-            </video>
-        </div>
-    </div>
-    <div id="credits">
-      Credits :
-      <ul>
-        <li>Source video : <a href="http://www.youtube.com/user/GoProCamera">Youtube GoPro</a></li>
-        <li>Source code : <a href ="https://github.com/sviande/AmbiLike">github</a></li>
-        <li>Inspired by Philips ambilight</li>
-      </ul>
-    </div>
-    <svg   xmlns="http://www.w3.org/2000/svg">
-      <filter id="svg_blur">
-        <feGaussianBlur stdDeviation="25"/>
-      </filter>
-    </svg>
+<h1>Ambilike</h1>
+
+<div id="wall_reflection">
+  <div id="c_container">
+    <canvas id="wall_canvas"></canvas>
+  </div>
+  <div id="v_container">
+    <video id="video" autoplay="autoplay" controls="controls" width="640px" height="360px">
+      <source src="assets/video.mp4" type="video/mp4"/>
+      <source src="assets/video.webm" type="video/webm"/>
+    </video>
+  </div>
+</div>
+<div id="credits">
+  Credits :
+  <ul>
+    <li>Source video : <a href="http://www.youtube.com/user/GoProCamera">Youtube GoPro</a></li>
+    <li>Source code : <a href="https://github.com/sviande/AmbiLike">github</a></li>
+    <li>Inspired by Philips ambilight</li>
+  </ul>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="svg_blur">
+    <feGaussianBlur stdDeviation="25"/>
+  </filter>
+</svg>
 </body>
 </html>
