@@ -1,81 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" >
-
-        var ratio = 1.1;
-        var fps   = 1 / 15;
-
-        document.addEventListener('DOMContentLoaded', function(){
-            var canvas  = document.getElementById('wall_canvas');
-            var video   = document.getElementById('video');
-            var context = canvas.getContext("2d");
-
-            canvas.height = video.height * ratio;
-            canvas.width = video.width * ratio;
-
-            var v_style = 'padding-top: '+((canvas.height - video.height)/ 2)+'px;';
-            video.setAttribute('style', v_style);
-
-            var c_width = canvas.clientWidth;
-            var c_height = canvas.clientHeight;
-
-            video.addEventListener('play', function(){
-                draw_on_wall(this, context, c_width, c_height);
-            });
-        }, false);
-
-        function draw_on_wall(video, context, width, height){
-          if(!video.paused){
-              context.drawImage(video, 0, 0, width, height);
-              setTimeout(draw_on_wall, fps, video, context, width, height);
-            }
-        }
-    </script>
-    <style>
-        body {
-            width: 100%;
-            margin: 0;
-            background-color: black;
-            color: whitesmoke;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        #c_container {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-        }
-
-        #v_container {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-        }
-
-        #wall_reflection {
-          height: 400px;
-        }
-
-        #wall_canvas {
-            -webkit-filter: blur(50px);
-	    filter: url("#svg_blur");
-        }
-
-        #credits {
-          text-align: center;
-        }
-
-        #credits ul {
-          text-align: center;
-          list-style: none;
-        }
-
-    </style>
-</head>
+    <script type="text/javascript" src="js/effect.js" ></script>
+    <link href="css/style.css" rel="stylesheet">
+    </head>
 <body>
     <h1>Ambilike</h1>
     <div id="wall_reflection">

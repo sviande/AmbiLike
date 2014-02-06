@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+}
+
+#c_container {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+#v_container {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+#wall_reflection {
+    height: 400px;
+}
+
+#wall_canvas {
+    -webkit-filter: blur(50px);
+    filter: url("#svg_blur");
+}
+
+#svg_blur {
+    display: none;
+}
+
+#credits {
+    text-align: center;
+}
+
+#credits ul {
+    text-align: center;
+    list-style: none;
+}
