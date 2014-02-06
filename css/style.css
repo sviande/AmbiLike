@@ -27,11 +27,7 @@ h1 {
 
 #wall_canvas {
     -webkit-filter: blur(50px);
-    filter: url("#svg_blur");
-}
-
-#svg_blur {
-    display: none;
+    filter: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxmaWx0ZXIgaWQ9J3N2Z19ibHVyJz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPScyNScvPjwvZmlsdGVyPjwvc3ZnPg==#svg_blur");
 }
 
 #credits {
